@@ -1,12 +1,4 @@
-﻿:root {
-    --sidenav-padding: 40px;
-}
-
-
-.jai-navbar-inverse {
-    background-color: white;
-    border-bottom: 1px solid gray;
-}
+﻿
 
 .navbar-brand {
     color: #428bca;
@@ -14,20 +6,22 @@
 
 .topbar {
     color: #428bca;
-
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 19px;
 }
 
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 90px; /* Stay at the top */
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
     left: 0;
     background-color: white;
     overflow-x: hidden;
     padding-top: 140px;
-    padding-left: var(--sidenav-padding);
+    padding-left: 50px;
     border-right: 1px solid gray;
 }
 
@@ -35,10 +29,10 @@
         padding: 0px 3px 1px 1px;
         text-decoration: none;
         font-size: 15px;
-        color: #338aad;   
+        color: #338aad;
         display: block;
-
 }
 
-
-
+.body{
+    padding-top: 10px;
+}

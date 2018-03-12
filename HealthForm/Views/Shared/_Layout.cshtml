@@ -26,36 +26,16 @@
 
     <div class="container">
         <div class="row topbar" name="topbar">
-            <div class="navbar jai-navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        @Html.ActionLink("SafeZone", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav jai-navbar">
-
-                            <li><a href="https://www.linkedin.com/in/jai-aggarwal-52a260127/">Founder</a></li>
-                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        </ul>
-                        @*@Html.Partial("_LoginPartial")*@
-                    </div>
-                </div>
-            </div>
+            @Html.Partial("~/Views/Shared/_topbar.cshtml")
         </div>
-
+    </div>
+    <div class="container">
         <div class="row">
             <div class="col-lg-2">
-                @Html.Partial("~/Views/Dashboard/_sidebar.cshtml")
+                @Html.Partial("~/Views/Shared/_sidebar.cshtml")
             </div>
             <div class="col-lg-10" id="target">
-
                 @RenderBody()
-
 
             </div>
         </div>
