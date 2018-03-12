@@ -1,0 +1,22 @@
+﻿@model HealthForm.ViewModels.RandomPatientViewModel
+
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Patient.FirstName</h2>
+@if (!String.IsNullOrWhiteSpace(Model.Patient.ID))
+{
+    <h2>@Model.Patient.ID</h2>
+}
+<h1>
+    <ul>
+        @foreach (var doctor in Model.Doctors)
+        {
+            <li>@doctor.age</li>
+        }
+    </ul>
+</h1>
+<input type="button" title="FormLink" value="Enter Portal" onclick="location.href='@Url.Action("New", "Patient")'" />
+
