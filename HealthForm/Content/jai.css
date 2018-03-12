@@ -5,14 +5,16 @@
 
 .jai-navbar-inverse {
     background-color: white;
+    border-bottom: 1px solid gray;
 }
 
 .navbar-brand {
     color: #428bca;
 }
 
-.jai-navbar {
+.topbar {
     color: #428bca;
+
 }
 
 .sidenav {
@@ -38,7 +40,5 @@
 
 }
 
-.row[name="topbar"]{
-    border-bottom: 2px solid gray;
-}
+
 
