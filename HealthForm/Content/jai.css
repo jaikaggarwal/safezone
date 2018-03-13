@@ -9,6 +9,11 @@
     margin-top: 20px;
     border-bottom: 1px solid gray;
     padding-bottom: 19px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+
 }
 
 .sidenav {
@@ -35,4 +40,17 @@
 
 .body{
     padding-top: 10px;
+}
+
+.main-page {
+    margin-top: 90px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 50%;
+    height: calc(100vh - 150px);
+    margin-left: 150px;
+}
+
+.body-row {
+    /*height: calc(100vh - 150px);*/
 }

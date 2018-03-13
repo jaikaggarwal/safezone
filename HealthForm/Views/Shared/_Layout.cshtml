@@ -25,16 +25,16 @@
 <body>
 
     <div class="container">
-        <div class="row topbar" name="topbar">
+        <div class="row topbar navbar" name="topbar">
             @Html.Partial("~/Views/Shared/_topbar.cshtml")
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-2">
+        <div class="row body-row">
+            <div class="col-md-1">
                 @Html.Partial("~/Views/Shared/_sidebar.cshtml")
             </div>
-            <div class="col-lg-10" id="target">
+            <div class="col-lg-11 main-page" id="target">
                 @RenderBody()
 
             </div>
