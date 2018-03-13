@@ -8,8 +8,9 @@ namespace HealthForm.Models
 {
     public class Patient
     {
-        [Required]
+        
         [Display(Name = "First Name")]
+        [Required]
         public string FirstName { get; set; }
 
         [Required]

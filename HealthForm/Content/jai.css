@@ -1,6 +1,7 @@
 ﻿:root{
     --first-animation-time: 8s;
     --second-animation-time: 4s;
+    --square-size: 130px;
 }
 
 .navbar-brand {
@@ -15,7 +16,7 @@
     position: fixed;
     overflow: hidden;
     top: 0;
-    width: 100%;
+    width: 100vw;
 
 }
 
@@ -84,7 +85,6 @@
     -webkit-animation-delay: var(--first-animation-time);
     width: 80vw;
     margin-left: 25vw;
-
 }
 
 .j-label{
@@ -112,6 +112,20 @@
 .login-button:hover {
     background-color: #d6deed;
 }
+
+.circle {
+ 
+    height: var(--square-size);
+    width: var(--square-size);
+    border-radius: 50%;
+    display: inline-block;
+    background-image: -webkit-radial-gradient(45px 45px, circle cover, white, lightblue);
+}
+
+.bottom-left-circle{
+    
+}
+
 
 @keyframes fadeInOut {
     0% {
