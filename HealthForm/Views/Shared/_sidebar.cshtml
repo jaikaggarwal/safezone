@@ -1,8 +1,12 @@
-﻿<div class="container-fluid">
+﻿@model HealthForm.Models.User
+
+<div class="container-fluid">
     <div class="sidenav">
         <p>To-do List</p>
         <p>Friends List</p>
         <p>Check up</p>
-        <a href="@Url.Action("New", "Patient")">Account Information</a>
+        <a href="@Url.Action("New", "Patient")">Account Information</a><br />
+        @*Want model name here! Need database!*@
+        <br /><p> Welcome [INSERT USER NAME]</p>
     </div>
 </div>

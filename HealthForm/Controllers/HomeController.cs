@@ -12,7 +12,7 @@ namespace HealthForm.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("Index", "Dashboard");
+            return RedirectToAction("Index", "Welcome");
        
         }
 
