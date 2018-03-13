@@ -13,38 +13,54 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row row-center">
+    <div class="container intro-container">
+        <div class="row row-top">
             <h2 class="intro"> Welcome </h2>
         </div>
 
         <div class="row">
-            <h2 class="login">
-                @using (Html.BeginForm("Login", "Welcome"))
-                {
-                    <div class="form-group block">
-                        <label>
-                            Name:
-                        </label> 
-                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control inline-form-element" })
-                        
+            <div class="container intro-container">
+                <div class="transparent">
+                    <h2 class="login-text">Login </h2><br />
+                    @using (Html.BeginForm("Login", "Welcome"))
+    {
+                <div class="form-group">
+                    <div class="container wide">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label class="j-label">
+                                    Name:
+                                </label>
+                            </div>
+                            <div class="col-lg-3">
+                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control j-textbox" })
+                            </div>
+                        </div>
                     </div>
+                </div>
 
+                <div class="form-group">
+                    <div class="container wide">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <label class="j-label">
+                                    Password:
+                                </label>
+                            </div>
+                            <div class="col-lg-3">
+                                @Html.TextBoxFor(m => m.Password, new { @class = "form-control j-textbox" })
+                            </div>
+                        </div>
+                    </div>
                     <div class="form-group">
-                        @Html.LabelFor(m => m.Password)
-                        @Html.TextBoxFor(m => m.Password, new { @class = "form-control" })
+                        <input type="submit" title="Log in" value="Log in" class="login-button" />
                     </div>
-                    <div class="form-group">
-                        <input type="submit" title="formlink" value="Log in" />
-                    </div>
-                }
-
-
-
-
-            </h2>
+                </div>
+}
+                </div>
         </div>
         
     </div>
+</div>
 </body>
 </html>
